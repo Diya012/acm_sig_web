@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Pass a function as parameter
+    </title>
+</head>
+
+<body style="text-align:center;">
+
+    <h1 style="color:green;">
+        ACM SIG GRAPH
+    </h1>
+
+    <p>
+        Passing function as arguments.
+    </p>
+
+    <!-- Function call after clicking the button -->
+    <button onclick="acm_outer(acm_inner)">
+        Click Here
+    </button>
+
+    <script>
+        function acm_inner(value) {
+            return 'hello User!';
+        }
+
+        function acm_outer(func) {
+            alert(func());
+        }
+    </script>
+</body>
+
+</html>
